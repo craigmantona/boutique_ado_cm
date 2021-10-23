@@ -172,6 +172,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+MEDIA_URL ='/templates/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'templates')
+
+
 if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'manton-boutique-ado'
